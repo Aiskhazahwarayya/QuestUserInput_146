@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FormDataDiri(
+                    FormPendaftaran(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
