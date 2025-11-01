@@ -1,15 +1,21 @@
 package com.example.prak4
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun FormPendaftaran(modifier: Modifier = Modifier) {
@@ -36,7 +42,20 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(backgroundLavender)
     ){
+        Box (
+            modifier = Modifier
+            .fillMaxWidth()
+            .height(110.dp)
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(Color(0xFFD1B3FF), Color(0xFFB388FF))
+                )
+            ),
+            contentAlignment = Alignment.CenterStart
+        ){
 
+
+        }
     }
 
 
