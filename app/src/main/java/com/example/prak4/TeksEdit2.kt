@@ -21,4 +21,8 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
     var status by remember { mutableStateOf("") }
     var showDialog by remember { mutableStateOf(false) }
 
+    val genderList = listOf("Laki-laki", "Perempuan")
+    val statusList = listOf("Janda", "Lajang", "Duda")
+
+
 }
