@@ -1,6 +1,7 @@
 package com.example.prak4
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -65,6 +66,15 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .padding(start = 20.dp, top = 16.dp)
             )
+        }
+        Column(
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxSize(),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+
         }
     }
 
