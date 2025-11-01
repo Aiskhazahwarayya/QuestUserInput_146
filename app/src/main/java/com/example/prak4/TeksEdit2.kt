@@ -12,6 +12,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
@@ -169,10 +172,29 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                     )
                     Spacer(modifier= Modifier.height(16.dp))
 
-
+                    Button(
+                        onClick = { showDialog = true },
+                        enabled = textNama.isNotEmpty() &&
+                                textJK.isNotEmpty() &&
+                                textStatus.isNotEmpty() &&
+                                textAlamat.isNotEmpty(),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(50.dp),
+                        shape = RoundedCornerShape(25.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = purpleButton)
+                    ) {
+                        Text(
+                            text = "Submit",
+                            color = Color.White,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
                 }
             }
         }
+
     }
 
 
