@@ -153,6 +153,19 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                             Text(text = item)
                         }
                     }
+                    Text(
+                        text = "ALAMAT",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    OutlinedTextField(
+                        value = textAlamat,
+                        onValueChange = { textAlamat = it },
+                        placeholder = { Text("Alamat lengkap") },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(60.dp)
+                    )
 
 
                 }
