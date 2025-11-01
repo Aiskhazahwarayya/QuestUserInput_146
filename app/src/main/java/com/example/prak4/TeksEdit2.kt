@@ -1,5 +1,7 @@
 package com.example.prak4
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -27,6 +29,16 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
 
     val backgroundLavender = Color(0xFFF3E5F5)
     val purpleButton = Color(0xFF7C3AED)
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(backgroundLavender)
+    ){
+
+    }
+
+
 
 
 }
